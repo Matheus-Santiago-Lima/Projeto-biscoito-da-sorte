@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body{
+    background: linear-gradient(45deg, #190361, #bb00ff);
+	animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+   
+}
+
+main
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 14rem;
+
+}
+
+/* page1 */
+
+.page1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 42.8rem;
+    height: 42.4rem;
+    background: #ffffff;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+
+}
+
+.page1 img:hover{
+    animation: vibration 150ms infinite;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.4rem;
+    width: 25.8rem;
+    color: #34355B;
+    display: flex;
+    margin-top: 4rem;
+}
+
+.page1 h2 {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #34355B;
+    margin-top: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+
+.page1 img{
+    width: 30rem;
+    height: 20rem;
+}
+
+/* page2 */
+
+.page2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 42.8rem;
+    height: fit-content;
+    background: #ffffff;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+
+}
+
+.page2 p {
+    font-family: 'Dancing Script';
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-align: center;
+    color: #000000;
+    width: fit-content;
+    height: fit-content;
+    margin: 1.7rem 6.75rem;
+    padding: 1rem;
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    animation: Biger 2s;
+   
+
+}
+
+.hide{
+    display: none;
+}
+
+button{
+    border: none;
+    background: #FF9500;
+    border-radius: 4px;
+    width: 17.4rem;
+    height: 5.2rem;
+    margin-bottom: 4.8rem;    
+
+}
+
+button h2{
+    color: white;
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+button:hover {
+    background:  #febe00;
+    width: 17.9rem;
+    height: 5.6rem;
+    margin-bottom: 4.4rem;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes Biger {
+    0%{
+        opacity: 0;
+        transform:translateY(60rem);
+        scale: 1%;
+    }
+
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 1;
+    }
+
+    100%{
+        
+        transform: translateY(0rem);
+        scale: 100%;
+    }
+
+}
+
+@keyframes vibration {
+    0%{
+        transform: translateX(0.5rem);
+    }
+
+    25%{
+        transform: translateY(0.5rem);
+    }
+
+    50%{
+        transform: translateX(-0.5rem);
+        
+    }
+
+    75%{
+        transform: translateY(-0.5rem);
+    }
+
+    90%{
+        transform: translateX(0.5rem);
+    }
+
+    95%{
+        transform: translateY(0.5rem);
+    }
+
+    100%{
+        transform: translateY(0rem);
+        transform: translateX(0rem);
+    }
+}
